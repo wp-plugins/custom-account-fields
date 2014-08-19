@@ -1,7 +1,7 @@
 === Custom account fields ===
 Contributors: Tomáš Slavík
 Donate link: mailto:custom-account-fields@monitom.cz
-Tags: woocommerce, DIČ, IČO, IČ, česky, slovensky, Czech, Slovak, cs_CZ, sk_SK, VAT, number, Company, identification, tax, eshop, e-shop, ecommerce, e-commerce, commerce, woothemes, wordpress ecommerce, store, sales, sell, shop, shopping, cart, checkout, configurable, additional, fields, variable, download, downloadable, digital, inventory, billing, shipping, woo commerce
+Tags: woocommerce, DIČ, IČO, IČ, česky, slovensky, cz, sk, Czech, Slovak, cs_CZ, sk_SK, VAT, number, Company, identification, tax, eshop, e-shop, ecommerce, e-commerce, commerce, woothemes, wordpress ecommerce, store, sales, sell, shop, shopping, cart, checkout, configurable, additional, fields, variable, download, downloadable, digital, inventory, billing, shipping, woo commerce, order
 Requires at least: 3.8 (WooCommerce: 2.1.0)
 Tested up to: 3.9 (2.1)
 Stable tag: 1.0
