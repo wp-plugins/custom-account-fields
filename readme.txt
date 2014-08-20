@@ -1,7 +1,7 @@
 === Custom account fields ===
 Contributors: Tomáš Slavík
 Donate link: mailto:custom-account-fields@monitom.cz
-Tags: woocommerce, DIČ, IČO, IČ, česky, slovensky, cz, sk, Czech, Slovak, cs_CZ, sk_SK, VAT, number, Company, identification, tax, eshop, e-shop, ecommerce, e-commerce, commerce, woothemes, wordpress ecommerce, store, sales, sell, shop, shopping, cart, checkout, configurable, additional, fields, variable, download, downloadable, digital, inventory, billing, shipping, woo commerce, order
+Tags: woocommerce, DIČ, IČO, IČ, česky, slovensky, česká, slovenská, české, slovenské, cz, sk, Czech, Slovak, zobrazení, úprava, VAT, number, Company, identification, tax, eshop, e-shop, ecommerce, e-commerce, commerce, woothemes, wordpress woocommerce, store, sales, sell, shop, shopping, cart, checkout, configurable, additional, fields, variable, download, downloadable, digital, inventory, fakturační, billing, shipping, adresa, address, woo commerce, order, objednávka
 Requires at least: 3.8 (WooCommerce: 2.1.0)
 Tested up to: 3.9 (2.1)
 Stable tag: 1.0
@@ -10,16 +10,17 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 = CZ =
-* České IČ (IČO), DIČ, nastavení telefonu jako nepovinné položky pro woocommerce. 
-* Doplňuje nové a nastavuje existující položky pro zákaznický (uživatelský) účet pro woocommerce. 
+* České IČ (IČO), DIČ, nastavení telefonu jako nepovinné položky pro woocommerce ve fakturační adrese. 
+* Doplňuje nové a nastavuje existující položky pro zákaznický (uživatelský) účet pro woocommerce.
+
 
 = EN =
-* Czech IČ(IČO) - Company number, DIČ - VAT number and phone number isn't required for woocommerce. 
+* Czech IČ(IČO) - Company number, DIČ - VAT number and phone number isn't required for woocommerce billing address. 
 * It adds new and sets existing customer account fields for woocommerce.
 
 == Installation ==
 = CZ =
-1. Stáhněte si poslední verzi a rozbalte ji do adresáře /wp-content/plugins/, nebo ho nainstalujte přes menu Pluginy -> Instalace pluginů v administraci.
+1. Stáhněte si poslední verzi a rozbalte ji do adresáře /wp-content/plugins/, nebo plugin nainstalujte přes menu Pluginy -> Instalace pluginů v administraci.
 1. Aktivujte plugin přes menu Pluginy v administraci WordPressu.
 1. Hotovo!
 
@@ -27,8 +28,6 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 1. Upload the plugin to your web presentation (eshop) or install via plugin management.
 1. Activate the plugin through the 'Plugins' menu in WordPress administration
 1. Done!
-
-
 
 == Frequently Asked Questions ==
 V případě připomínek, nalezení chyby nás prosím kontaktujte následovně.
