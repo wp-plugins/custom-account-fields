@@ -10,13 +10,17 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 = CZ =
+
 Doplňuje nové a nastavuje existující položky pro zákaznický (uživatelský) účet pro woocommerce:
+
 * České a slovenské IČ (IČO), DIČ 
 * Slovenské IČ DPH (VAT number 2) pro Slovenskou republiku
 * nastavení telefonu jako nepovinné položky pro woocommerce ve fakturační adrese.
 
 = EN =
+
 Adds new and sets existing customer account fields for woocommerce:
+
 * Czech and Slovak IČ(IČO) - Company number, DIČ - VAT number 
 * Slovak IČ DPH (VAT number 2) for Slovak republic
 * phone number isn't required for woocommerce billing address.
