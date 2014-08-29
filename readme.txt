@@ -8,6 +8,9 @@ Stable tag: 1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
+Doplňuje nové a nastavuje existující položky zákaznického účtu pro woocommerce.
+Adds new and sets existing customer ... for woocommerce.
+
 == Description ==
 = CZ =
 
