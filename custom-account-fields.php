@@ -5,7 +5,7 @@ Plugin URI:
 Description: Doplňuje nové a nastavuje existující položky pro zákaznický (uživatelský) účet pro woocommerce. České a slovenské IČ (IČO), DIČ, slovenské IČ DPH nastavení telefonu jako nepovinné položky pro woocommerce. Adds new and sets existing customer account fields for woocommerce. Czech and Slovak IČ(IČO) - Company number, DIČ - VAT number, Slovak IČ DPH - VAT number 2 and phone number isn't required for woocommerce.
 Author: Tomáš Slavík
 Author URI: http://www.monitom.cz/
-Version: 1.1
+Version: 1.2
 License: GPLv3 or later
 */
 
@@ -22,7 +22,7 @@ final class mtCustomAccountFields {
 	/**
 	 * @var string
 	 */
-	public $version = '1.1';
+	public $version = '1.2';
 
 	/**
 	 * @The single instance of the class
@@ -73,6 +73,11 @@ final class mtCustomAccountFields {
 		add_filter( 'woocommerce_order_formatted_billing_address', array( $this, 'woocommerce_order_formatted_billing_address' ), 10, 2 );
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
+		
+		// admin (backend) part
+		add_filter( 'woocommerce_customer_meta_fields', array( $this, 'woocommerce_customer_meta_fields' ) );
+		add_filter( 'woocommerce_admin_billing_fields', array( $this, 'woocommerce_admin_billing_fields' ) );
+		
 				
 	}
 	
@@ -168,6 +173,40 @@ final class mtCustomAccountFields {
 		
 		// Variables for JS scripts
 
+	}
+	
+	public function woocommerce_customer_meta_fields($fields) {
+		$fields['billing']['fields'] += array(
+			'billing_company_number' => array(
+				'label' => __('Company number', 'custom-account-fields'),
+				'description' => ''
+			),	
+			'billing_vat_number' => array(
+				'label' => __('VAT number', 'custom-account-fields'),
+				'description' => ''
+			),	
+			'billing_vat_number_2' => array(
+				'label' => __('VAT number 2', 'custom-account-fields'),
+				'description' => ''
+			) );
+		return $fields;
+	}
+	
+	public function woocommerce_admin_billing_fields ($fields) {
+		return $fields += array(
+			'company_number' => array(
+				'label'     => __('Company number', 'custom-account-fields'),
+				'show'   => false
+			),
+			'vat_number' => array(
+				'label'     => __('VAT number', 'custom-account-fields'),
+				'show'   => false
+			),
+			'vat_number_2' => array(
+				'label'     => __('VAT number 2', 'custom-account-fields'),
+				'show'   => false
+			) );
+				
 	}
 }	
 endif;

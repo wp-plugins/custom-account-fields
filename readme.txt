@@ -1,7 +1,7 @@
 === Custom account fields ===
 Contributors: Tomáš Slavík
 Donate link: mailto:custom-account-fields@monitom.cz
-Tags: woocommerce, DIČ, IČO, IČ, IČ DPH, česky, slovensky, česká, slovenská, české, slovenské, cz, sk, Czech, Slovak, zobrazení, úprava, VAT, number, Company, identification, tax, eshop, e-shop, ecommerce, e-commerce, commerce, woothemes, wordpress woocommerce, store, sales, sell, shop, shopping, cart, checkout, configurable, additional, fields, variable, download, downloadable, digital, inventory, fakturační, billing, shipping, adresa, address, woo commerce, order, objednávka
+Tags: woocommerce, DIČ, IČO, IČ, IČ DPH, česky, slovensky, česká, slovenská, české, slovenské, cz, sk, Czech, Slovak, zobrazení, úprava, VAT, number, Company, identification, tax, eshop, e-shop, ecommerce, e-commerce, commerce, woothemes, wordpress woocommerce, store, sales, sell, shop, shopping, cart, checkout, configurable, additional, fields, variable, download, downloadable, digital, inventory, fakturační, billing, shipping, adresa, address, woo commerce, order, objednávka, admin, backend
 Requires at least: 3.8 (WooCommerce: 2.1.0)
 Tested up to: 3.9.2 (2.1.12)
 Stable tag: 1.1
@@ -16,17 +16,23 @@ Adds new and sets existing customer ... for woocommerce.
 
 Doplňuje nové a nastavuje existující položky pro zákaznický (uživatelský) účet pro woocommerce:
 
- * České a slovenské IČ (IČO), DIČ 
- * Slovenské IČ DPH (VAT number 2) pro Slovenskou republiku
- * nastavení telefonu jako nepovinné položky pro woocommerce ve fakturační adrese.
+* České a slovenské IČ (IČO), DIČ 
+* Slovenské IČ DPH (VAT number 2) pro Slovenskou republiku
+* nastavení telefonu jako nepovinné položky pro woocommerce ve fakturační adrese.
+* podpora pro editaci IČ, DIČ, IČ DPH v administraci v:
+  * Uživatelé -> UživatelXY(Upravit) -> Fakturační adresa zákazníka
+  * E-shop-WooCommerce -> Objednávky -> ObjednávkaXY(zobrazit(upravit)) -> Fakturační údaje(editace)
 
 = EN =
 
 Adds new and sets existing customer account fields for woocommerce:
 
- * Czech and Slovak IČ(IČO) - Company number, DIČ - VAT number 
- * Slovak IČ DPH (VAT number 2) for Slovak republic
- * phone number isn't required for woocommerce billing address.
+* Czech and Slovak IČ(IČO) - Company number, DIČ - VAT number(Tax number)
+* Slovak IČ DPH (VAT number 2) for Slovak republic
+* phone number isn't required for woocommerce billing address.
+* support for editing IČ, DIČ, IČ DPH in the administration (backend): 
+   * Users -> UserXY(Edit) -> Billing address of the customer 
+   * E-shop-WooCommerce -> Orders-> OrderXY(show(edit)) -> Billing Information (edit)
 
 
 == Installation ==
@@ -50,6 +56,12 @@ Do you have questions or issues with this plugin?
 
 
 == Changelog ==
+= 1.2 =
+* CZ
+  * podpora pro editaci IČ, DIČ, IČ DPH v administraci obchodu
+* EN
+  * support for editing IČ, DIČ, IČ DPH in the administration (backend)
+
 = 1.1 =
 * CZ
   * Přidáno IČ DPH pro slovenské firmy
