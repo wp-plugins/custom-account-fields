@@ -31,8 +31,8 @@ Adds new and sets existing customer account fields for woocommerce:
 * Slovak IČ DPH (VAT number 2) for Slovak republic
 * phone number isn't required for woocommerce billing address.
 * support for editing IČ, DIČ, IČ DPH in the administration (backend): 
-   * Users -> UserXY(Edit) -> Billing address of the customer 
-   * E-shop-WooCommerce -> Orders-> OrderXY(show(edit)) -> Billing Information (edit)
+  * Users -> UserXY(Edit) -> Billing address of the customer 
+  * E-shop-WooCommerce -> Orders-> OrderXY(show(edit)) -> Billing Information (edit)
 
 
 == Installation ==
