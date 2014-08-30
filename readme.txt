@@ -4,7 +4,7 @@ Donate link: mailto:custom-account-fields@monitom.cz
 Tags: woocommerce, DIČ, IČO, IČ, IČ DPH, česky, slovensky, česká, slovenská, české, slovenské, cz, sk, Czech, Slovak, zobrazení, úprava, VAT, number, Company, identification, tax, eshop, e-shop, ecommerce, e-commerce, commerce, woothemes, wordpress woocommerce, store, sales, sell, shop, shopping, cart, checkout, configurable, additional, fields, variable, download, downloadable, digital, inventory, fakturační, billing, shipping, adresa, address, woo commerce, order, objednávka, admin, backend
 Requires at least: 3.8 (WooCommerce: 2.1.0)
 Tested up to: 3.9.2 (2.1.12)
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
