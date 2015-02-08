@@ -5,7 +5,7 @@ Plugin URI:
 Description: Doplňuje nové a nastavuje existující položky pro zákaznický (uživatelský) účet pro woocommerce. České a slovenské IČ (IČO), DIČ, slovenské IČ DPH nastavení telefonu jako nepovinné položky pro woocommerce. Adds new and sets existing customer account fields for woocommerce. Czech and Slovak IČ(IČO) - Company number, DIČ - VAT number, Slovak IČ DPH - VAT number 2 and phone number isn't required for woocommerce.
 Author: Tomáš Slavík
 Author URI: http://www.monitom.cz/
-Version: 1.2
+Version: 1.2.1
 License: GPLv3 or later
 */
 
@@ -22,7 +22,7 @@ final class mtCustomAccountFields {
 	/**
 	 * @var string
 	 */
-	public $version = '1.2';
+	public $version = '1.2.1';
 
 	/**
 	 * @The single instance of the class
@@ -134,14 +134,13 @@ final class mtCustomAccountFields {
 	}
 
 	public function woocommerce_formatted_address_replacements( $replace, $args) {
-		extract( $args );
 		return $replace += array(
-			'{company_number}' => $company_number == '' ? '' : __('Company number: ', 'custom-account-fields') . $company_number,
-			'{vat_number}' => $vat_number == '' ? '' : __('VAT number: ', 'custom-account-fields') . $vat_number,
-			'{vat_number_2}' => $vat_number_2 == '' ? '' : __('VAT number 2: ', 'custom-account-fields') . $vat_number_2,
-			'{company_number_upper}' => strtoupper($company_number == '' ? '' : __('Company number: ', 'custom-account-fields') . $company_number),
-			'{vat_number_upper}' => strtoupper($vat_number == '' ? '' : __('VAT number: ', 'custom-account-fields') . $vat_number),
-			'{vat_number_upper_2}' => strtoupper($vat_number_2 == '' ? '' : __('VAT number 2: ', 'custom-account-fields') . $vat_number_2),
+			'{company_number}' => (isset($args['company_number']) && $args['company_number'] != '' ) ?  __('Company number: ', 'custom-account-fields') .$args['company_number'] : '',
+     	    '{vat_number}' => (isset($args['vat_number']) && $args['vat_number'] != '') ?  __('VAT number: ', 'custom-account-fields') . $args['vat_number'] : '',
+			'{vat_number_2}' => (isset($args['vat_number_2']) && $args['vat_number_2'] != '') ?  __('VAT number 2: ', 'custom-account-fields') . $args['vat_number_2'] :'',
+			'{company_number_upper}' => strtoupper((isset($args['company_number']) && $args['company_number'] != '') ?__('Company number: ', 'custom-account-fields') . $args['company_number'] : '' ),
+			'{vat_number_upper}' => strtoupper((isset($args['vat_number']) && $args['vat_number'] != '') ? __('VAT number: ', 'custom-account-fields') . $args['vat_number'] : ''),
+			'{vat_number_upper_2}' => strtoupper((isset($args['vat_number_2']) && $args['vat_number_2'] != '') ? __('VAT number 2: ', 'custom-account-fields') . $args['vat_number_2'] : '') ,
 		);
 	}
 
@@ -158,7 +157,6 @@ final class mtCustomAccountFields {
 
 
 	public function wp_enqueue_scripts() {
-
 		$suffix               = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 		$assets_path          = str_replace( array( 'http:', 'https:' ), '', $this->plugin_url() ) . '/assets/';
 		$frontend_script_path = $assets_path . 'js/frontend/';
