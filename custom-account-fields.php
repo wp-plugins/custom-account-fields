@@ -5,7 +5,7 @@ Plugin URI:
 Description: Doplňuje nové a nastavuje existující položky pro zákaznický (uživatelský) účet pro woocommerce. České a slovenské IČ (IČO), DIČ, slovenské IČ DPH nastavení telefonu jako nepovinné položky pro woocommerce. Adds new and sets existing customer account fields for woocommerce. Czech and Slovak IČ(IČO) - Company number, DIČ - VAT number, Slovak IČ DPH - VAT number 2 and phone number isn't required for woocommerce.
 Author: Tomáš Slavík
 Author URI: http://www.monitom.cz/
-Version: 1.2.1
+Version: 1.2.2
 License: GPLv3 or later
 */
 
@@ -22,7 +22,7 @@ final class mtCustomAccountFields {
 	/**
 	 * @var string
 	 */
-	public $version = '1.2.1';
+	public $version = '1.2.2';
 
 	/**
 	 * @The single instance of the class
